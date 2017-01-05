@@ -3,6 +3,5 @@ class WelcomeController < ApplicationController
   end
   
   def unregistered
-  	
   end
 end
