@@ -11,5 +11,6 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require_boostrap_material_design
  *= require_self
  */
