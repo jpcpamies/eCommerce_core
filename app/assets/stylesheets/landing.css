@@ -13,5 +13,11 @@
  * Le hemos quitado el requiere tree para decirle explicitamente cuales archivos queremos que importe.
  *= require common
  *= require bootstrap-material-design
+ *= require app
  *= require_self
  */
+
+ /*Aquí puedo poner estilos que solo son para el landing y no afectan el resto de app */
+ body{
+ 	background-color: red;
+ }
