@@ -9,3 +9,6 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+
+# Aquí le decimos que en producción también precompile el landing.css, además del application.css
+Rails.application.config.assets.precompile += %w( landing.css )
