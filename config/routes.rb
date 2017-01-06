@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   # Creado por Devise para las urls /user/sign_in etc
   devise_for :users
 
+  # Ruta a la que dirigir el formulario para poder guardar el correo 
+  # Nombro la ruta con create_email
+  post "/emails/create", as: :create_email
+
   # Esta es la ruta para el user que está sign in
   authenticated :user do
     root 'welcome#index'
