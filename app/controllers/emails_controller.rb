@@ -1,5 +1,4 @@
-class EmailController < ApplicationController
-
+class EmailsController < ApplicationController
 	
   def create
   	# Aquí vamos a recibir los datos del campo email en el formualario email
@@ -11,7 +10,6 @@ class EmailController < ApplicationController
   		# Si no pasa las validaciones es porque hay errores con la info que recibimos. en vez de hacer render del objeto hacemos render de un campo errors.
   		render json: @email.errors, status: :unprocessable_entity
   	end
-  	
 
   end
 end
