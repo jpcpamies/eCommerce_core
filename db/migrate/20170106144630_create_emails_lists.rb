@@ -1,6 +1,6 @@
-class CreateMyEmails < ActiveRecord::Migration
+class CreateEmailsLists < ActiveRecord::Migration
   def change
-    create_table :my_emails do |t|
+    create_table :emails_lists do |t|
       t.string :email
       t.string :ip
       t.integer :state

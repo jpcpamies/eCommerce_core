@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :my_email do
+  factory :emails_list do
     email "MyString"
     ip "MyString"
     state 1

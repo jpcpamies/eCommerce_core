@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
@@ -24,10 +23,23 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'devise'
-gem 'haml-rails'
+#Devise para autenticación
+gem "devise"
+#HAML para crear un mejor HTML
+gem "haml-rails"
+#Gema de bootstrap
 gem 'bootstrap-sass'
+#Tema Material Design para bootstrap
 gem 'bootstrap-material-design'
+#Paperclip para subir imagenes
+gem 'paperclip'
+#PayPal SDK
+gem 'paypal-sdk-rest'
+#Aasm para crear maquinas de estado
+gem 'aasm'
+#Credit Card Validator
+gem "credit_card_validator"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,14 +50,17 @@ gem 'bootstrap-material-design'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 group :development, :test do
-
-	gem 'shoulda-matchers'
-	gem 'rspec-rails'
-	gem "factory_girl_rails"
-
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  #Anotacion de los modelos
+  gem 'annotate'
+
+  gem 'shoulda-matchers'
+  gem 'rspec-rails'
+  gem "factory_girl_rails", "~> 4.0"
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
