@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   # Creado por Devise para las urls /user/sign_in etc
   devise_for :users
 

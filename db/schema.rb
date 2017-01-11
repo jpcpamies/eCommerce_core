@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170106144630) do
+ActiveRecord::Schema.define(version: 20170111015040) do
 
   create_table "emails_lists", force: :cascade do |t|
     t.string   "email"
@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(version: 20170106144630) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "pricing"
+    t.text     "description"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  add_index "products", ["user_id"], name: "index_products_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
