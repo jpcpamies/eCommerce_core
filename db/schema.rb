@@ -31,11 +31,15 @@ ActiveRecord::Schema.define(version: 20170111015040) do
 
   create_table "products", force: :cascade do |t|
     t.string   "name"
-    t.decimal  "pricing"
+    t.decimal  "pricing",             precision: 10, scale: 2
     t.text     "description"
     t.integer  "user_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.datetime "created_at",                                   null: false
+    t.datetime "updated_at",                                   null: false
   end
 
   add_index "products", ["user_id"], name: "index_products_on_user_id"
