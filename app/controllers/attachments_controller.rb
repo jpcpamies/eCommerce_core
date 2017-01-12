@@ -1,4 +1,4 @@
-class AttachmentController < ApplicationController
+class AttachmentsController < ApplicationController
 	before_action :authenticate_user!
 	before_action :authenticate_owner!
   def new
