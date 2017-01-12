@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-  resources :attachments, only: [:create, :destroy, :new, :show]
+  resources :attachments, only: [:create,:destroy,:new,:show]
 
   resources :products
   # Creado por Devise para las urls /user/sign_in etc
