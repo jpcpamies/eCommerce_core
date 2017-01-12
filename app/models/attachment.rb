@@ -4,5 +4,4 @@ class Attachment < ActiveRecord::Base
   has_attached_file :archivo, path: ":rails_root/archivos/:id/:style/:filename"
 
   do_not_validate_attachment_file_type :archivo #Necesita cambiarse
-
 end

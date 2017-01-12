@@ -1,6 +1,6 @@
-class CreateAttachements < ActiveRecord::Migration
+class CreateAttachments < ActiveRecord::Migration
   def change
-    create_table :attachements do |t|
+    create_table :attachments do |t|
       t.references :product, index: true, foreign_key: true
       t.attachment :archivo
       t.timestamps null: false

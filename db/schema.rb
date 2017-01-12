@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170112162856) do
+ActiveRecord::Schema.define(version: 20170112165145) do
 
-  create_table "attachements", force: :cascade do |t|
+  create_table "attachments", force: :cascade do |t|
     t.integer  "product_id"
     t.string   "archivo_file_name"
     t.string   "archivo_content_type"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20170112162856) do
     t.datetime "updated_at",           null: false
   end
 
-  add_index "attachements", ["product_id"], name: "index_attachements_on_product_id"
+  add_index "attachments", ["product_id"], name: "index_attachments_on_product_id"
 
   create_table "emails_lists", force: :cascade do |t|
     t.string   "email"
