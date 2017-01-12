@@ -6,6 +6,7 @@ class AttachmentsController < ApplicationController
   
   
   def show
+    # Esto te permite mandar un archivo en lugar de una vista
     send_file @attachment.archivo.path
   end
 
