@@ -1,5 +1,6 @@
 class Product < ActiveRecord::Base
   belongs_to :user
+  has_many :attachements
   validates_presence_of :name,:user,:pricing
   validates :pricing, numericality: { greater_than: 0 }
 
